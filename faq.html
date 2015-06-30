@@ -118,55 +118,93 @@
     </div>
     <div id="bodyColumn">
       <div id="contentBox">
-        <div class="section"><h2><a name="top">Fosstrak - Frequently Asked Questions</a></h2><p><b>General</b></p><ol type="1"><li><a href="#reference">
-        Is this a reference implementation of the EPC Network?
-      </a></li><li><a href="#other-projects">
-        Are there other open source projects incorporating the EPC Network standards?
-      </a></li><li><a href="#epc-information">
-        Where can I find more information about the EPC Network?
-      </a></li><li><a href="#imlemented-components">
-        Which components of the EPC Network have you implemented?
-      </a></li><li><a href="#epc-global">
-        Who is EPCglobal?
-      </a></li><li><a href="#contribute">
-        Can I contribute to this project even, if I am not part of the Auto-ID Labs or EPCglobal?
-      </a></li><li><a href="#other-efforts">
-        How is this Fosstrak project different from other rfid open source efforts?
-      </a></li><li><a href="#maven">
-        Why are you using Maven and how can I use it?
-      </a></li></ol></div><div class="section"><h2>General</h2><dl><dt><a name="reference">
-        Is this a reference implementation of the EPC Network?
-      </a></dt><dd>
-        No. 
-      <table border="0"><tr><td align="right"><a href="#top">[top]</a></td></tr></table><hr /></dd><dt><a name="other-projects">
-        Are there other open source projects incorporating the EPC Network standards?
-      </a></dt><dd>
-        Yes, there are. There have been several attempts to release open source software in the RFID domain. A number of projects never ended up releasing any software though. Two very promising efforts are the <a href="http://www.llrp.org">LLRP Toolkit Project</a> to which the Fosstrak team contributed the Java implementation and the <a href="http://www.rifidi.org">Rifidi</a> project.
-      <table border="0"><tr><td align="right"><a href="#top">[top]</a></td></tr></table><hr /></dd><dt><a name="epc-information">
-        Where can I find more information about the EPC Network?
-      </a></dt><dd>
-        Check out the website of <a href="http://www.epcglobalinc.org">EPCglobal</a> and in particular the architecture framework document. Or check out this <a href="http://www.autoidlabs.org/uploads/media/IntegratingReadersV1dot02.pdf">paper</a> we recently wrote on RFID system interfaces.
-      <table border="0"><tr><td align="right"><a href="#top">[top]</a></td></tr></table><hr /></dd><dt><a name="imlemented-components">
-        Which components of the EPC Network have you implemented?
-      </a></dt><dd>
-        Have a look at the <a href="overview.html">overview page</a>.
-      <table border="0"><tr><td align="right"><a href="#top">[top]</a></td></tr></table><hr /></dd><dt><a name="epc-global">
-        Who is EPCglobal?
-      </a></dt><dd>
-        EPCglobal is a subscriber-driven organisation comprised of industry leaders and organisations focused on creating global standards for the EPCglobal Network.
-      <table border="0"><tr><td align="right"><a href="#top">[top]</a></td></tr></table><hr /></dd><dt><a name="contribute">
-        Can I contribute to this project even, if I am not part of the Auto-ID Labs or EPCglobal?
-      </a></dt><dd>
-        Yes. Fosstrak is an independent, community-driven open source project initiated by the Auto-ID Lab in Switzerland with contributions from the lab at the University of Cambridge. While initiated by the Auto-ID Lab at ETH Zurich/University St. Gallen and the Distributed Systems Group at ETH Zurich, it is open for participation by everyone.
-      <table border="0"><tr><td align="right"><a href="#top">[top]</a></td></tr></table><hr /></dd><dt><a name="other-efforts">
-        How is this Fosstrak project different from other rfid open source efforts?
-      </a></dt><dd>
-        The Fosstrak project has an active developer community with significant RFID middleware experience and insights into the RFID/EPC standardisation process. There is a strong focus on implementing the specifications developed by EPCglobal and its members and providing useful tools for these implementations.
-      <table border="0"><tr><td align="right"><a href="#top">[top]</a></td></tr></table><hr /></dd><dt><a name="maven">
-        Why are you using Maven and how can I use it?
-      </a></dt><dd>
-        The Fosstrak project uses <a href="http://maven.apache.org/">Maven</a> for the build and project management. An introduction to running  maven can be found <a href="http://maven.apache.org/run-maven/index.html"> here</a>. There is also information available on the <a href="http://m2eclipse.codehaus.org/"> maven eclipse intregration</a>.
-      <table border="0"><tr><td align="right"><a href="#top">[top]</a></td></tr></table></dd></dl></div>
+        <div class="section">
+<h2><a name="top">Fosstrak - Frequently Asked Questions</a></h2>
+		<p></p><ul><li><a href="#Fosstrak_General">Fosstrak General</a></li>
+<ul><li><a href="#Is_this_a_reference_implementation_of_the_EPC_Network?">Is this a reference implementation of the EPC Network?</a></li>
+<li><a href="#Are_there_other_open_source_projects_incorporating_the_EPC_Netwo">Are there other open source projects incorporating the EPC Network standards?</a></li>
+<li><a href="#Where_can_I_find_more_information_about_the_EPC_Network?">Where can I find more information about the EPC Network?</a></li>
+<li><a href="#Which_components_of_the_EPC_Network_have_you_implemented?">Which components of the EPC Network have you implemented?</a></li>
+<li><a href="#What_is_EPCglobal?">What is EPCglobal?</a></li>
+<li><a href="#Can_I_contribute_to_this_project_even,_if_I_am_not_part_of_the_A">Can I contribute to this project even, if I am not part of the Auto-ID Labs or EPCglobal?</a></li>
+<li><a href="#How_is_this_Fosstrak_project_different_from_other_RFID_open_sour">How is this Fosstrak project different from other RFID open source efforts?</a></li>
+<li><a href="#Why_are_you_using_Maven_and_how_can_I_use_it?">Why are you using Maven and how can I use it?</a></li></ul><li><a href="#Fosstrak_EPCIS">Fosstrak EPCIS</a></li>
+<ul><li><a href="#What_is_EPCIS?">What is EPCIS?</a></li>
+<li><a href="#Is_this_a_reference_implementation_of_the_EPCglobal_EPC_Informat">Is this a reference implementation of the EPCglobal EPC Information Services (EPCIS) Specification?</a></li>
+<li><a href="#Can_I_contribute_to_this_project_even_if_I_am_not_part_of_the_Au">Can I contribute to this project even if I am not part of the Auto-ID Labs or EPCglobal?</a></li>
+<li><a href="#Where_can_I_get_further_information_and/or_support?">Where can I get further information and/or support?</a></li>
+<li><a href="#How_do_I_interact_with_the_repository?">How do I interact with the repository?</a></li>
+<li><a href="#How_do_I_build_the_project?">How do I build the project?</a></li>
+<li><a href="#How_can_I_get_authentication_and_authorization_in_order_to_secur">How can I get authentication and authorization in order to secure my repository?</a></li>
+<li><a href="#How_can_I_use_Fosstrak_with_other_database_backends_(e.g.,_Postg">How can I use Fosstrak with other database backends (e.g., PostgreSQL)?</a></li></ul><li><a href="#Fosstrak_ALE">Fosstrak ALE</a></li>
+<ul><li><a href="#Can_I_start_a_graphical_HAL_Simulator_from_within_Apache_Tomcat?">Can I start a graphical HAL Simulator from within Apache Tomcat?</a></li>
+<li><a href="#In_Windows_Vista_the_graphical_HAL_Simulator_apears_on_a_differe">In Windows Vista the graphical HAL Simulator apears on a different desktop (with black background).</a></li>
+<li><a href="#Is_this_a_reference_implementation_of_the_EPCglobal_Reader_Proto">Is this a reference implementation of the EPCglobal Reader Protocol Version 1.1?</a></li>
+<li><a href="#Which_RFID_readers_do_you_support?">Which RFID readers do you support?</a></li>
+<li><a href="#I_have_a_reader,_but_Fosstrak_does_not_support_its_proprietary_p">I have a reader, but Fosstrak does not support its proprietary protocol.</a></li>
+<li><a href="#I_don't_have_a_reader,_but_I_would_like_to_check_out_the_AL">I don't have a reader, but I would like to check out the ALE middleware features anyway.</a></li>
+<li><a href="#Can_I_contribute_to_this_project_even,_if_I_am_not_part_of_the_A">Can I contribute to this project even, if I am not part of the Auto-ID Labs or EPCglobal?</a></li>
+<li><a href="#How_can_I_contribute_to_this_project?">How can I contribute to this project?</a></li></ul></ul>
+<p></p><h1><a name="Fosstrak_General"></a>Fosstrak General<a href="#Fosstrak_General" class="section_anchor"></a></h1>
+<h2><a name="Is_this_a_reference_implementation_of_the_EPC_Network?"></a>Is this a reference implementation of the EPC Network?<a href="#Is_this_a_reference_implementation_of_the_EPC_Network?" class="section_anchor"></a></h2>
+<p>No. </p>
+<h2><a name="Are_there_other_open_source_projects_incorporating_the_EPC_Netwo"></a>Are there other open source projects incorporating the EPC Network standards?<a href="#Are_there_other_open_source_projects_incorporating_the_EPC_Netwo" class="section_anchor"></a></h2>
+<p>Yes, there are. There have been several attempts to release open source software in the RFID domain. A number of projects never ended up releasing any software though. Two very promising efforts are the <a href="http://www.llrp.org/" rel="nofollow">LLRP Toolkit Project</a> to which the Fosstrak team contributed the Java implementation and the <a href="http://www.rifidi.org/" rel="nofollow">Rifidi</a> project. </p>
+<h2><a name="Where_can_I_find_more_information_about_the_EPC_Network?"></a>Where can I find more information about the EPC Network?<a href="#Where_can_I_find_more_information_about_the_EPC_Network?" class="section_anchor"></a></h2>
+<p>Check out the website of <a href="http://www.epcglobalinc.org/" rel="nofollow">EPCglobal</a> and in particular the architecture framework document. Or check out this paper we recently wrote on RFID system interfaces. </p>
+<h2><a name="Which_components_of_the_EPC_Network_have_you_implemented?"></a>Which components of the EPC Network have you implemented?<a href="#Which_components_of_the_EPC_Network_have_you_implemented?" class="section_anchor"></a></h2>
+<p>Have a look at the <a href="http://code.google.com/p/fosstrak" rel="nofollow">overview page</a>. </p>
+<h2><a name="What_is_EPCglobal?"></a>What is EPCglobal?<a href="#What_is_EPCglobal?" class="section_anchor"></a></h2>
+<p>EPCglobal is a subscriber-driven organisation comprised of industry leaders and organisations focused on creating global standards for the EPCglobal Network. </p>
+<h2><a name="Can_I_contribute_to_this_project_even,_if_I_am_not_part_of_the_A"></a>Can I contribute to this project even, if I am not part of the Auto-ID Labs or EPCglobal?<a href="#Can_I_contribute_to_this_project_even,_if_I_am_not_part_of_the_A" class="section_anchor"></a></h2>
+<p>Yes. Fosstrak is an independent, community-driven open source project initiated by the Auto-ID Lab in Switzerland with contributions from the lab at the University of Cambridge. While initiated by the Auto-ID Lab at ETH Zurich/University St. Gallen and the Distributed Systems Group at ETH Zurich, it is open for participation by everyone. </p>
+<h2><a name="How_is_this_Fosstrak_project_different_from_other_RFID_open_sour"></a>How is this Fosstrak project different from other RFID open source efforts?<a href="#How_is_this_Fosstrak_project_different_from_other_RFID_open_sour" class="section_anchor"></a></h2>
+<p>The Fosstrak project has an active developer community with significant RFID middleware experience and insights into the RFID/EPC standardisation process. There is a strong focus on implementing the specifications developed by EPCglobal and its members and providing useful tools for these implementations. </p>
+<h2><a name="Why_are_you_using_Maven_and_how_can_I_use_it?"></a>Why are you using Maven and how can I use it?<a href="#Why_are_you_using_Maven_and_how_can_I_use_it?" class="section_anchor"></a></h2>
+<p>The Fosstrak project uses <a href="http://maven.apache.org/" rel="nofollow">Maven</a> for the build and project management. An introduction to running maven can be found here. There is also information available on the <a href="http://m2eclipse.codehaus.org/" rel="nofollow">maven eclipse integration</a>. </p><h1><a name="Fosstrak_EPCIS"></a>Fosstrak EPCIS<a href="#Fosstrak_EPCIS" class="section_anchor"></a></h1>
+<h2><a name="What_is_EPCIS?"></a>What is EPCIS?<a href="#What_is_EPCIS?" class="section_anchor"></a></h2>
+<p>EPCIS is a standard to exchange RFID-related events between businesses. For more information, please see EPCglobal's EPCIS FAQ at <a href="http://www.epcglobalinc.org/standards/epcis/epcis_1_0-faq-20070427.pdf" rel="nofollow">http://www.epcglobalinc.org/standards/epcis/epcis_1_0-faq-20070427.pdf</a>. </p>
+<h2><a name="Is_this_a_reference_implementation_of_the_EPCglobal_EPC_Informat"></a>Is this a reference implementation of the EPCglobal EPC Information Services (EPCIS) Specification?<a href="#Is_this_a_reference_implementation_of_the_EPCglobal_EPC_Informat" class="section_anchor"></a></h2>
+<p>No, but the Fosstrak EPCIS repository has been EPCglobal certified. </p>
+<h2><a name="Can_I_contribute_to_this_project_even_if_I_am_not_part_of_the_Au"></a>Can I contribute to this project even if I am not part of the Auto-ID Labs or EPCglobal?<a href="#Can_I_contribute_to_this_project_even_if_I_am_not_part_of_the_Au" class="section_anchor"></a></h2>
+<p>Yes. While initiated by the Auto-ID Lab at ETH Zurich/University St. Gallen and the Distributed Systems Group at ETH Zurich, it is open for participation by everyone. </p>
+<h2><a name="Where_can_I_get_further_information_and/or_support?"></a>Where can I get further information and/or support?<a href="#Where_can_I_get_further_information_and/or_support?" class="section_anchor"></a></h2>
+<p>First, you should read the <a href="/p/fosstrak/wiki/EpcisUserGuide">user guide</a>. If you can't find the information you are looking for you should check the mailing list archive and, as a last resort, you can post your question to the mailing list. </p>
+<h2><a name="How_do_I_interact_with_the_repository?"></a>How do I interact with the repository?<a href="#How_do_I_interact_with_the_repository?" class="section_anchor"></a></h2>
+<p>Please consult the <a href="/p/fosstrak/wiki/EpcisUserGuide">user guide</a>. </p>
+<h2><a name="How_do_I_build_the_project?"></a>How do I build the project?<a href="#How_do_I_build_the_project?" class="section_anchor"></a></h2>
+<p>Please consult the <a href="/p/fosstrak/wiki/EpcisDeveloperGuide">developer guide</a>. </p>
+<h2><a name="How_can_I_get_authentication_and_authorization_in_order_to_secur"></a>How can I get authentication and authorization in order to secure my repository?<a href="#How_can_I_get_authentication_and_authorization_in_order_to_secur" class="section_anchor"></a></h2>
+<p>You can easily add these features to an Fosstrak-based EPCIS installation by setting up an instance of the Apache Webserver as a proxy and using Apache's authentication mechanisms. </p>
+<h2><a name="How_can_I_use_Fosstrak_with_other_database_backends_(e.g.,_Postg"></a>How can I use Fosstrak with other database backends (e.g., PostgreSQL)?<a href="#How_can_I_use_Fosstrak_with_other_database_backends_(e.g.,_Postg" class="section_anchor"></a></h2>
+<p>The database backend officially supported by Fosstrak EPCIS is MySQL. However, Thomas Rudfoss wrote a very nice <a href="http://sourceforge.net/mailarchive/message.php?msg_id=23157984" rel="nofollow">tutorial</a> on how to run Fosstrak EPCIS on top of PostgreSQL or Oracle. Stephen Tan also provided some great <a href="http://sourceforge.net/mailarchive/message.php?msg_id=21116989" rel="nofollow">hints</a> on how to use Fosstrak EPCIS with Microsoft SQL Server. </p><h1><a name="Fosstrak_ALE"></a>Fosstrak ALE<a href="#Fosstrak_ALE" class="section_anchor"></a></h1>
+<h2><a name="Can_I_start_a_graphical_HAL_Simulator_from_within_Apache_Tomcat?"></a>Can I start a graphical HAL Simulator from within Apache Tomcat?<a href="#Can_I_start_a_graphical_HAL_Simulator_from_within_Apache_Tomcat?" class="section_anchor"></a></h2>
+<p>Yes, you can. You need to modify the runtime permissions for Apache Tomcat </p><p>Option 1: Tomcat is started through the Service Manager (System tray) </p>
+<ul><li>Start the Service Manager </li>
+<li>Select "Configure...". </li>
+<li>Select tab "Log On". </li>
+<li>Enable the checkbox "Allow service to interact with desktop". </li>
+<li>Start Apache Tomcat. </li></ul><p></p><p>Option 2: Tomcat is started through the command line </p>
+<ul><li>In the Windows system settings select the "Services" within "Administrative Control". </li>
+<li>Select Apache Tomcat </li>
+<li>Select tab "Log On". </li>
+<li>Enable the checkbox "Allow service to interact with desktop". </li>
+<li>Start Apache Tomcat. </li></ul><p></p>
+<h2><a name="In_Windows_Vista_the_graphical_HAL_Simulator_apears_on_a_differe"></a>In Windows Vista the graphical HAL Simulator apears on a different desktop (with black background).<a href="#In_Windows_Vista_the_graphical_HAL_Simulator_apears_on_a_differe" class="section_anchor"></a></h2>
+<p>This is a caused by the security profile. Simply run tomcat as Administrator. (right mouse click on the executable and select "run as Administrator"). </p>
+<h2><a name="Is_this_a_reference_implementation_of_the_EPCglobal_Reader_Proto"></a>Is this a reference implementation of the EPCglobal Reader Protocol Version 1.1?<a href="#Is_this_a_reference_implementation_of_the_EPCglobal_Reader_Proto" class="section_anchor"></a></h2>
+<p>No. </p>
+<h2><a name="Which_RFID_readers_do_you_support?"></a>Which RFID readers do you support?<a href="#Which_RFID_readers_do_you_support?" class="section_anchor"></a></h2>
+<p>We support out of the box any reader that support the EPCglobal LLRP protocol. This includes among others the Impinj Speedway reader, the Motorola FX7400, the Intermec IF61 and the open source Rifidi Tag Simulator. In addition, we also support the proprietary FEIG protocol (ID ISC.LRU1000/ID ISC.MR101-A). </p>
+<h2><a name="I_have_a_reader,_but_Fosstrak_does_not_support_its_proprietary_p"></a>I have a reader, but Fosstrak does not support its proprietary protocol.<a href="#I_have_a_reader,_but_Fosstrak_does_not_support_its_proprietary_p" class="section_anchor"></a></h2>
+<p>Implement your own HAL wrapper for your reader. As a benefit you will get all the filtering, event generation, messaging and tool support we already implemented for free. </p>
+<h2><a name="I_don't_have_a_reader,_but_I_would_like_to_check_out_the_AL"></a>I don't have a reader, but I would like to check out the ALE middleware features anyway.<a href="#I_don't_have_a_reader,_but_I_would_like_to_check_out_the_AL" class="section_anchor"></a></h2>
+<p>Use the Rifidi Tag Emulator and configure the Fosstrak middleware to communicate with the simulator via LLRP </p>
+<h2><a name="Can_I_contribute_to_this_project_even,_if_I_am_not_part_of_the_A"></a>Can I contribute to this project even, if I am not part of the Auto-ID Labs or EPCglobal?<a href="#Can_I_contribute_to_this_project_even,_if_I_am_not_part_of_the_A" class="section_anchor"></a></h2>
+<p>Yes. While initiated by the Auto-ID Lab at ETH Zurich/University St. Gallen and the Distributed Systems Group at ETH Zurich, it is open for participation by everyone. </p>
+<h2><a name="How_can_I_contribute_to_this_project?"></a>How can I contribute to this project?<a href="#How_can_I_contribute_to_this_project?" class="section_anchor"></a></h2>
+<p>There are a number of ways you can contribute. Contact us for details. We currently support only a limited number of RFID readers. If you implement a wrapper for your reader, we would like you to contribute your implementation to this effort. </p>		
+		
       </div>
     </div>
     <div class="clear">
