@@ -152,36 +152,14 @@
     <div id="bodyColumn">
       <div id="contentBox">
         <div class="section"><h2>Download</h2>
-<p>The current version of Fosstrak TDT Engine is 0.9.0.</p>
-<div class="section"><h3>Latest Release </h3>
-<table class="bodyTable"><tbody><tr class="a"><td align="left"><b>Package</b>
-</td>
-<td align="left"><b>JAR</b>
-</td>
-<td align="left"><b>JAR with Dependencies</b>
-</td>
-<td align="left"><b>Source</b>
-</td>
-<td align="left"><b>Notes</b>
-</td>
-</tr>
-<tr class="b"><td align="left">TDT 0.9.0</td>
-<td align="left"><a class="externalLink" href="http://maven-repository.fosstrak.org/releases/org/fosstrak/tdt/tdt/0.9.0/tdt-0.9.0.jar">tdt-0.9.0.jar</a>
-</td>
-<td align="left"><a class="externalLink" href="http://maven-repository.fosstrak.org/releases/org/fosstrak/tdt/tdt/0.9.0/tdt-0.9.0-with-dependencies.jar">tdt-0.9.0-with-dependencies.jar</a>
-</td>
-<td align="left"><a class="externalLink" href="http://maven-repository.fosstrak.org/releases/org/fosstrak/tdt/tdt/0.9.0/tdt-0.9.0-src.zip">tdt-0.9.0-src.zip</a>
-</td>
-<td align="left"><a href="changes-report.html">Changes</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section"><h3>Previous Releases</h3>
-<p>All previous releases of Fosstrak TDT can be found in the <a class="externalLink" href="http://maven-repository.fosstrak.org/releases">distribution repository</a>
-</p>
-</div>
+		<table><tbody>
+		<tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Module</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Version</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Download</strong> </td></tr> 
+		<tr><td style="border: 1px solid #ccc; padding: 5px;"> TDT </td><td style="border: 1px solid #ccc; padding: 5px;"> 1.0.0 </td><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://oss.sonatype.org/content/repositories/public/org/fosstrak/tdt/tdt/1.0.0/tdt-1.0.0-with-dependencies.jar" rel="nofollow">tdt-1.0.0-with-dependencies.jar</a> </td></tr> 
+		<tr><td style="border: 1px solid #ccc; padding: 5px;"> TDT </td><td style="border: 1px solid #ccc; padding: 5px;"> 0.9.0 </td><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://oss.sonatype.org/content/repositories/public/org/fosstrak/tdt/tdt/0.9.0/tdt-0.9.0-with-dependencies.bundle" rel="nofollow">tdt-0.9.0-with-dependencies.bundle</a> </td></tr> 
+		<tr><td style="border: 1px solid #ccc; padding: 5px;"> TDT .NET </td><td style="border: 1px solid #ccc; padding: 5px;">  1.0.0 (alpha version) </td><td style="border: 1px solid #ccc; padding: 5px;">  <a href="https://github.com/Zambonilli/FOSSTRAK" rel="nofollow">https://github.com/Zambonilli/FOSSTRAK</a> </td></tr> 
+		</tbody></table>
+		
+		<p></p><p>The source code for this binary can be found in the Git repository at <a href="https://github.com/Fosstrak/fosstrak-tdt" rel="nofollow">https://github.com/Fosstrak/fosstrak-tdt</a> </p>
 <div class="section"><h3>System Requirements</h3>
 <table class="bodyTable"><tbody><tr class="a"><td align="left"><b>JDK</b>
 </td>
@@ -202,6 +180,17 @@
 <p>Please consult the <a href="user-index.html"> User Guide</a>
  for usage instructions.</p>
 </div>
+<div class="section">
+		<h2><a name="Changelog"></a>Changelog<a href="#Changelog" class="section_anchor"></a></h2>
+		<h3><a name="TDT_.NET_Version)"></a>TDT .NET Version)<a href="#TDT_.NET_Version)" class="section_anchor"></a></h3>
+		<ul><li>Mike Lohmeier contributed a TDT implementation for .NET </li><li>see <a href="https://github.com/Zambonilli/FOSSTRAK" rel="nofollow">https://github.com/Zambonilli/FOSSTRAK</a> for more details </li></ul><h3>
+		<a name="Version_1.0.0_(released_April_10,_2012)"></a>Version 1.0.0 (released April 10, 2012)<a href="#Version_1.0.0_(released_April_10,_2012)" class="section_anchor"></a></h3>
+		<ul><li>Added support for TDT Specification Version 1.6 </li><li>Updated TDTEngine.java to better handle escaped characters in URIs as well as situations where multiple prefixMatch values appear to match (the problem was introduced because bare 00 and 01 in ELEMENT_STRING level match any header beginning with 00 or 01) </li><li> </li></ul>
+		<h3><a name="Version_0.9.0_(released_June_3,_2009)"></a>Version 0.9.0 (released June 3, 2009)<a href="#Version_0.9.0_(released_June_3,_2009)" class="section_anchor"></a></h3>
+		<ul><li>Added support for loading TDT translation schemes from a URL. Thanks to Jochen Mader. </li><li>Added default constructor that loads EPCglobal TDT translation schemes from within the JAR. (Previously the schemes could only be loaded from an external file system location.) Thanks to Jochen Mader. </li><li>Manifest file is OSGI bundle-compliant now. </li><li>Replaced Castor dependency with Xerces. Thanks to Jochen Mader. </li></ul>
+		<h3><a name="Version_0.4.0_(released_July_29,_2008)"></a>Version 0.4.0 (released July 29, 2008)<a href="#Version_0.4.0_(released_July_29,_2008)" class="section_anchor"></a></h3>
+		<ul><li>Renamed packages from org.accada to org.fosstrak.</li></ul>
+		
 </div>
 
       </div>
